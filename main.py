@@ -1,8 +1,16 @@
 import time
-import replit
+from os import system, name 
 from datetime import date
 from replit import db
 import random
+
+def clear():
+    # for windows
+    if name == 'nt':
+        system('cls')
+    # for mac and linux(here, os.name is 'posix')
+    else:
+        system('clear')
 
 name = 0
 id_number = 0
@@ -43,7 +51,7 @@ def start_screen():
     print(f"{turquoise}Powered by: Replit Co.")
     time.sleep(2)
     for i in range(10):
-        replit.clear()
+        clear()
         print(f'''{green}$$$$$$$$\      $$$$$$$\                      $$\             $$$$$$$\  $$\                     
 \__$$  __|     $$  __$$\                     $$ |            $$  __$$\ $$ |                    
    $$ |        $$ |  $$ | $$$$$$\  $$$$$$$\  $$ |  $$\       $$ |  $$ |$$ |$$\   $$\  $$$$$$$\ 
@@ -56,7 +64,7 @@ def start_screen():
                                                                                                
 {blue}Loading''')
         time.sleep(0.5)
-        replit.clear()
+        clear()
         print(f'''{green}$$$$$$$$\      $$$$$$$\                      $$\             $$$$$$$\  $$\                     
 \__$$  __|     $$  __$$\                     $$ |            $$  __$$\ $$ |                    
    $$ |        $$ |  $$ | $$$$$$\  $$$$$$$\  $$ |  $$\       $$ |  $$ |$$ |$$\   $$\  $$$$$$$\ 
@@ -69,7 +77,7 @@ def start_screen():
                                                                                                
 {blue}Loading.''')
         time.sleep(0.5)
-        replit.clear()
+        clear()
         print(f'''{green}$$$$$$$$\      $$$$$$$\                      $$\             $$$$$$$\  $$\                     
 \__$$  __|     $$  __$$\                     $$ |            $$  __$$\ $$ |                    
    $$ |        $$ |  $$ | $$$$$$\  $$$$$$$\  $$ |  $$\       $$ |  $$ |$$ |$$\   $$\  $$$$$$$\ 
@@ -82,7 +90,7 @@ def start_screen():
                                                                                                
 {blue}Loading..''')
         time.sleep(0.5)
-        replit.clear()
+        clear()
         print(f'''{green}$$$$$$$$\      $$$$$$$\                      $$\             $$$$$$$\  $$\                     
 \__$$  __|     $$  __$$\                     $$ |            $$  __$$\ $$ |                    
    $$ |        $$ |  $$ | $$$$$$\  $$$$$$$\  $$ |  $$\       $$ |  $$ |$$ |$$\   $$\  $$$$$$$\ 
@@ -96,7 +104,7 @@ def start_screen():
 {blue}Loading...''')
         time.sleep(0.5)
         i = i + 1
-    replit.clear()
+    clear()
     time.sleep(5)
                
 start_screen()
@@ -129,24 +137,24 @@ A Python application with finance and banking made easy. Since you are new, crea
     balance = int(input("Starting balance: "))
     password = str(input("Create password: "))
     for i in range(5):
-        replit.clear()
+        clear()
         print(f'''{blue}
 Creating account''')
         time.sleep(0.5)
-        replit.clear()
+        clear()
         print(f'''{blue}
 Creating account.''')
         time.sleep(0.5)
-        replit.clear()
+        clear()
         print(f'''{blue}
 Creating account..''')
         time.sleep(0.5)
-        replit.clear()
+        clear()
         print(f'''{blue}
 Creating account...''')
         time.sleep(0.5)
         i = i + 1
-    replit.clear()
+    clear()
     time.sleep(0.5)
 
 print(f'''{yellow}WELCOME BACK TO T-BANK PLUS!
@@ -156,13 +164,13 @@ password_to_get_in = input("Password: ")
 while password_to_get_in != password:
     print(f"{red}Incorrect password!{white}")
     password_to_get_in = input("Password: ")
-replit.clear()
+clear()
 print(f"{green}Logging in...{white}")
 save_data()
 time.sleep(2)
 
 while True:
-    replit.clear()
+    clear()
     print(f'''{green}T-BANK PLUS
     
 {white}{name}'s Account
@@ -231,24 +239,24 @@ Balance: {green}{balance}{white}
             enter = input("Are you sure? (y/n)")
             if enter == "y":
                 for i in range(5):
-                        replit.clear()
+                        clear()
                         print(f'''{red}
 Deleting account{white}''')
                         time.sleep(0.5)
-                        replit.clear()
+                        clear()
                         print(f'''{red}
 Deleting account.{white}''')
                         time.sleep(0.5)
-                        replit.clear()
+                        clear()
                         print(f'''{red}
 Deleting account..{white}''')
                         time.sleep(0.5)
-                        replit.clear()
+                        clear()
                         print(f'''{red}
 Deleting account...{white}''')
                         time.sleep(0.5)
                         i = i + 1
-                replit.clear()
+                clear()
                 time.sleep(0.5)
                 name = 0
                 id_number = 0
@@ -267,24 +275,24 @@ A Python application with finance and banking made easy. Since you are new, crea
                 balance = int(input("Starting balance: "))
                 password = str(input("Create password: "))
                 for i in range(5):
-                    replit.clear()
+                    clear()
                     print(f'''{blue}
 Creating account''')
                     time.sleep(0.5)
-                    replit.clear()
+                    clear()
                     print(f'''{blue}
 Creating account.''')
                     time.sleep(0.5)
-                    replit.clear()
+                    clear()
                     print(f'''{blue}
 Creating account..''')
                     time.sleep(0.5)
-                    replit.clear()
+                    clear()
                     print(f'''{blue}
 Creating account...''')
                     time.sleep(0.5)
                     i = i + 1
-                replit.clear()
+                clear()
                 time.sleep(0.5)
                 print(f'''{yellow}WELCOME BACK TO T-BANK PLUS!{white}
 
@@ -300,24 +308,24 @@ You are previously signed in as {name}, {id_number}''')
                 pass
         elif setting == 3:
             for i in range(5):
-                replit.clear()
+                clear()
                 print(f'''
 {yellow}Saving data{white}''')
                 time.sleep(0.5)
-                replit.clear()
+                clear()
                 print(f'''
 {yellow}Saving data.{white}''')
                 time.sleep(0.5)
-                replit.clear()
+                clear()
                 print(f'''
 {yellow}Saving data..{white}''')
                 time.sleep(0.5)
-                replit.clear()
+                clear()
                 print(f'''
 {yellow}Saving data...{white}''')
                 time.sleep(0.5)
                 i = i + 1
-            replit.clear()
+            clear()
             time.sleep(0.5)
             save_data()
 
