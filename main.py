@@ -116,13 +116,16 @@ def start_screen():
 start_screen()
 
 def save_data():
-    global db
+    with open("./database.json", "r") as file:
+        db = json.load(file)
     db['name'] = name
     db['balance'] = balance
     db['id_number'] = id_number
     db['expenses'] = expenses
     db['earned'] = earned
     db['password'] = password
+    with open("./database.json", "w") as file:
+        json.dump(db, file)
 
 try:
     name = db['name']
