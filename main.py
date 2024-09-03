@@ -1,7 +1,6 @@
 import time
 from os import system, name 
 from datetime import date
-from replit import db
 import random
 
 def clear():
