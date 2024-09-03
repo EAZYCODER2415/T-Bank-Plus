@@ -12,6 +12,8 @@ def clear():
     else:
         system('clear')
 
+db = load("./database.json")
+
 name = 0
 id_number = 0
 expenses = {}
