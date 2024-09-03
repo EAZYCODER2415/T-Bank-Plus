@@ -11,6 +11,10 @@ def clear():
     else:
         system('clear')
 
+def load(file):
+    with open(file, "r") as file:
+        return json.load(file)
+
 db = load("./database.json")
 
 name = 0
