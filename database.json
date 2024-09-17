@@ -1,1 +1,1 @@
-{"name": null, "id_number": null, "balance": null, "expenses": null, "earned": null, "password": null}
+{"name": 0, "id_number": 0, "balance": 0, "expenses": {}, "earned": {}, "password": 0}

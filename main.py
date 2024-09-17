@@ -127,14 +127,14 @@ def save_data():
     with open("./database.json", "w") as file:
         json.dump(db, file)
 
-try:
-    name = db['name']
-    balance = db['balance']
-    id_number = db['id_number']
-    expenses = db['expenses']
-    earned = db['earned']
-    password = db['password']
-except:
+name = db['name']
+balance = db['balance']
+id_number = db['id_number']
+expenses = db['expenses']
+earned = db['earned']
+password = db['password']
+
+if name == 0 and id_number == 0 and expenses == {} and earned == {} and balance == 0 and password == 0:
     print(f'''{white}WELCOME TO T-BANK PLUS!
 
 A Python application with finance and banking made easy. Since you are new, create a new account to begin!
