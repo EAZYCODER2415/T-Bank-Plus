@@ -1,1 +1,1 @@
-database = {"name": 0, "id_number": 0, "balance": 0, "expenses": [], "earned": [], "password": 0}
+{"name": 0, "id_number": 0, "balance": 0, "expenses": [], "earned": [], "password": 0}
